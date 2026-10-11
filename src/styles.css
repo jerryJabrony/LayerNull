@@ -101,6 +101,18 @@
 .why-item svg { color: var(--security); width: 22px; height: 22px; margin-bottom: 13px; }
 .why-item h3 { font-size: 14px; margin-bottom: 10px; }
 .why-item p { font-size: 12px; color: var(--muted-foreground); line-height: 1.8; }
+.expert-section { overflow: hidden; }
+.expert-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: 86px; align-items: center; }
+.expert-visual { position: relative; min-height: 600px; }
+.expert-main-photo { display: block; width: min(420px, 85%); height: 580px; object-fit: cover; object-position: center 20%; border-radius: 6px; filter: saturate(.82) contrast(1.03); }
+.expert-inset-photo { position: absolute; right: 0; bottom: 34px; width: 210px; height: 280px; object-fit: cover; object-position: center 20%; border: 8px solid var(--background); border-radius: 6px; }
+.expert-caption { position: absolute; left: 18px; bottom: 18px; display: flex; align-items: center; gap: 9px; padding: 10px 13px; border-radius: 4px; background: color-mix(in oklab,var(--background) 91%,transparent); backdrop-filter: blur(10px); font-size: 9px; text-transform: uppercase; letter-spacing: 1px; }
+.experience-list { display: grid; gap: 6px; }
+.experience-item { display: grid; grid-template-columns: 42px 1fr; gap: 17px; padding: 17px 0; border-bottom: 1px solid var(--border); }
+.experience-item:last-child { border-bottom: 0; }
+.experience-item .icon-badge { width: 40px; height: 40px; margin: 0; }
+.experience-item h3 { margin: 0 0 7px; font-size: 14px; }
+.experience-item p { margin: 0; color: var(--muted-foreground); font-size: 12px; line-height: 1.75; }
 .guide { border-block: 1px solid var(--border); padding: 40px 0; background: color-mix(in oklab,var(--primary) 4%,var(--background)); }
 .guide-inner { display: flex; align-items: center; gap: 27px; }
 .guide-icon { width: 52px; height: 52px; color: var(--primary); flex-shrink: 0; }
@@ -126,7 +138,7 @@
  .site-container { width: calc(100% - 48px); } .desktop-nav { gap: 17px; }
  .hero h1 { font-size: 45px; max-width: 600px; } .hero { min-height: 670px; }
  .audience-grid { grid-template-columns: repeat(2,1fr); }
- .why-layout,.faq-layout { gap: 35px; } .format-card { padding: 24px; }
+ .why-layout,.faq-layout { gap: 35px; } .expert-layout { gap: 40px; } .expert-visual { min-height: 520px; } .expert-main-photo { height: 500px; } .expert-inset-photo { width: 170px; height: 225px; } .format-card { padding: 24px; }
  .process-grid { gap: 16px; } .guide-inner { flex-wrap: wrap; }
 }
 @media(max-width:700px) {
@@ -143,7 +155,8 @@
  .info-card { padding: 23px; } .audience-grid .info-card { display: grid; grid-template-columns: 39px 1fr; column-gap: 18px; } .audience-grid .icon-badge { grid-row: 1/3; margin-bottom: 0; } .audience-grid h3 { margin-top: 0; }
  .service-wide { grid-column: auto; } .service-wide .service-list { display: block; }
  .process-grid { grid-template-columns: 1fr; gap: 16px; margin-top: 28px; } .process-step { display: grid; grid-template-columns: 44px 1fr; gap: 17px; } .step-number { grid-row: 1/3; border: 0; font-size: 24px; padding: 0; margin: 0; } .process-grid h3 { margin: 0; } .process-grid p { margin: 0; }
- .formats-grid { gap: 26px; } .why-layout,.faq-layout { grid-template-columns: 1fr; gap: 22px; } .why-grid { gap: 25px; }
+ .formats-grid { gap: 26px; } .why-layout,.faq-layout,.expert-layout { grid-template-columns: 1fr; gap: 34px; } .why-grid { gap: 25px; }
+ .expert-visual { min-height: 430px; } .expert-main-photo { width: 82%; height: 420px; } .expert-inset-photo { width: 145px; height: 193px; bottom: 22px; } .expert-caption { left: 11px; bottom: 11px; max-width: 220px; line-height: 1.5; }
  .guide-inner { gap: 18px; align-items: flex-start; } .guide-icon { width: 35px; } .guide-copy { min-width: 230px; } .guide-copy h3 { font-size: 17px; } .guide-inner .action-button { margin-left: 53px; }
  .contact { padding: 55px 0; } .contact h2 { font-size: 29px; } .contact p { font-size: 12px; }
  .footer-top { align-items: flex-start; flex-direction: column; } .footer-links { flex-wrap: wrap; gap: 18px; }
