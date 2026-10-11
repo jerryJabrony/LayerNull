@@ -78,9 +78,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Crypto Tech // Consulting" },
+      { title: "Layer Null // Consulting" },
       { name: "description", content: "Персональные консультации по криптотехнологиям, DeFi и безопасности цифровых активов." },
-      { property: "og:title", content: "Crypto Tech // Consulting" },
+      { property: "og:title", content: "Layer Null // Consulting" },
       { property: "og:description", content: "Криптотехнологии. Законность. Безопасность." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

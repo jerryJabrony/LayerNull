@@ -12,3 +12,4 @@
 - Keep the consulting experience as a single content route with anchor navigation; the brief describes one continuous landing page.
 - Use shared semantic tokens and existing shadcn controls for interactive elements; this keeps the visual system consistent.
 - Contact actions link directly to the supplied Telegram and email, with no lead storage or backend; inquiries happen through those channels.
+- Keep the individual course curriculum in a dedicated presentational component on the main page; independent module content keeps the consulting route maintainable.
