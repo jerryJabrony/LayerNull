@@ -4,7 +4,7 @@ import { ArrowUpRight, ArrowRight, ShieldCheck, Shield, Hexagon, Send, LockKeyho
 import { Button } from '@/components/ui/button';
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion';
 import networkImage from '@/assets/crypto-network.jpg';
-import networkVideo from '@/assets/crypto-network-video.mp4.asset.json';
+import networkVideo from '@/assets/crypto-network-loop.mp4.asset.json';
 import { IndividualCourse } from '@/components/individual-course';
 import expertPortrait from '@/assets/expert-portrait.jpg.asset.json';
 
